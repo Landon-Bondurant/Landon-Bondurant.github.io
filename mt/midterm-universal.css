@@ -20,3 +20,7 @@ nav ul li a {
     color: white;
     border-bottom: 1px white;
 }
+nav ul li a:hover {
+    color: black;
+    background: white;
+}
