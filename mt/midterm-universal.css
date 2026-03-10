@@ -24,3 +24,15 @@ nav ul li a:hover {
     color: black;
     background: white;
 }
+@media screen and (max-width: 650px) {
+    header {
+        display: grid;
+    }
+    header nav ul li {
+        border-top: white solid 1px;
+    }
+    header nav ul {
+        display: grid;
+    }
+    
+}
