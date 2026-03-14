@@ -51,14 +51,12 @@ p, p ul li a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-.grid1 {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    gap: 50px;
-    align-items: center;
+
+.center {
+    justify-items: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     header {
         display: grid;
     }
@@ -72,6 +70,11 @@ p, p ul li a {
 }
 
 @media screen and (min-width: 800px) {
-
+    .grid1 {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        gap: 50px;
+        align-items: center;
+    }
     
 }
