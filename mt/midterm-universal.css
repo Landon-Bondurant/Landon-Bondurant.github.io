@@ -63,6 +63,17 @@ p {
 
 }
 
+.textLinkh3 {
+    font-family: "Oswald", sans-serif;
+    color: rgba(60, 120, 216, 1);
+    text-decoration: none;
+}
+.textLinkh3:hover {
+    color:white;
+    background:black;
+
+}
+
 .center {
     display: flex;
     justify-content: center;
