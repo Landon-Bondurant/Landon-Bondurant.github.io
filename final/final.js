@@ -14,6 +14,7 @@ const br2 = document.getElementById("br2");
 let valPrev = 0;
 let valNext = 0;
 let delta = 0;
+let prevt = 0;
 let sealed = false;
 seal.addEventListener("click", function() {
     sealed = true;
@@ -49,9 +50,11 @@ op.addEventListener("click", function() {
     br1.style.display = "";
     br2.style.display = "";
 });
-function loop() {
+function loop(ct) {
     valNext = volSlider.value;
     delta = valNext - valPrev;
+    let dt = ct - prevt;
+    prevt = ct
     if (!sealed) {
         if (delta < 0) {
             volume += (-delta) / 30;
@@ -65,7 +68,7 @@ function loop() {
         //console.log(document.getElementById("a").value);
         volDisplay.innerText = volume;
         volDisp.value = volume;
-        volume -= 0.2
+        volume -= 0.2 * dt / 50;
     }
     valPrev = valNext;
 
@@ -73,4 +76,4 @@ function loop() {
 
     requestAnimationFrame(loop);
 }
-loop();
+requestAnimationFrame(loop);
