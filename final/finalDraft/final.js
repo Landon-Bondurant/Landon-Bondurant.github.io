@@ -12,6 +12,7 @@ const vdslabel = document.getElementById("vdsplabel");
 const br1 = document.getElementById("br1");
 const br2 = document.getElementById("br2");
 const ss = document.getElementById("sealStatus");
+const pi = document.getElementById("pumpImg");
 let valPrev = 0;
 let valNext = 0;
 let delta = 0;
@@ -39,6 +40,7 @@ cl.addEventListener("click", function() {
     vdslabel.style.display = "none";
     br1.style.display = "none";
     br2.style.display = "none";
+    pi.style.display = "none";
 });
 op.addEventListener("click", function() {
     volSlider.style.display = "";
@@ -53,6 +55,7 @@ op.addEventListener("click", function() {
     vdslabel.style.display = "";
     br1.style.display = "";
     br2.style.display = "";
+    pi.style.display = "";
 });
 function loop(ct) {
     valNext = volSlider.value;

@@ -6,3 +6,17 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #baffff;
 }
+#pumpImg {
+    z-index: 0;
+    display:block;
+    width: 100%;
+}
+#volume-slider {
+    position: relative;
+    top:31px;
+    z-index: 1;
+}
+.container {
+    margin: 0 auto;
+    width: 200px;
+}
